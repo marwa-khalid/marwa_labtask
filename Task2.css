@@ -1,0 +1,38 @@
+
+/* Setting container to flex and
+	width to 80% of view port */
+.container {
+	display: flex;
+	padding: 80px;
+}
+/*Adding background image to each section*/
+.one {
+	background: url(./img1.jpg);
+}
+.two {
+	background: url(./img2.png);
+}
+.three {
+	background: url(./img3.jpg);
+}
+.four {
+	background: url(./img4.jpg);
+}
+
+.section {
+	border-radius: 15%;
+	background-size: cover;
+	background-position: center;
+	height: 68vh;
+	cursor: pointer;
+	flex: 0.2;
+	margin: 8px;
+	position: relative;
+	transition: all 0.7s ease-out;
+}
+
+/* section with active class will
+	grow flex to 3 times */
+.section.active {
+	flex: 3;
+}
